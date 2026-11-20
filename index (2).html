@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>جليتش | GULISH — ستايلك كله هنا</title>
+<meta name="description" content="جليتش GULISH — ملابس رجالي وكوتشيهات. اطلب الآن عبر واتساب أو اتصل بنا: 01117549514. تابعنا على انستجرام وفيسبوك." />
+<meta name="theme-color" content="#0b0906" />
+<meta name="author" content="جليتش GULISH" />
+
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="ar_EG" />
+<meta property="og:site_name" content="جليتش GULISH" />
+<meta property="og:title" content="جليتش GULISH — ستايلك كله هنا" />
+<meta property="og:description" content="ملابس رجالي وكوتشيهات. اطلب عبر واتساب: 01117549514" />
+<meta property="og:image" content="assets/hero.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23fbeeb8'/%3E%3Cstop offset='.5' stop-color='%23e7c65e'/%3E%3Cstop offset='1' stop-color='%23a87d1f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%230b0906'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' text-anchor='middle' fill='url(%23g)'%3EG%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800;900&family=DM+Serif+Display&family=Reem+Kufi:wght@400;600;700&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet" />
+
+<style>
+/* ============ أساسيات ============ */
+:root{
+  --bg:#0b0906;
+  --bg-2:#120e08;
+  --ink:#f6ecd8;
+  --muted:#c8b795;
+  --muted-2:#9c8d6f;
+  --gold-1:#fbeeb8;
+  --gold-2:#e7c65e;
+  --gold-3:#c29a35;
+  --gold-4:#8f6b1c;
+  --line:rgba(231,198,94,.28);
+  --line-strong:rgba(231,198,94,.55);
+  --glass:rgba(22,17,10,.72);
+  --radius:20px;
+  --shadow:0 18px 50px -18px rgba(0,0,0,.85);
+  --ease:cubic-bezier(.22,.68,.36,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  min-height:100dvh;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Tajawal","Noto Kufi Arabic","Segoe UI",system-ui,sans-serif;
+  font-weight:400;
+  line-height:1.75;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit}
+
+/* ============ الخلفية الفاخرة ============ */
+.bg{position:fixed;inset:0;z-index:-2;overflow:hidden;background:
+  radial-gradient(120% 80% at 50% -10%, #241a0d 0%, #120e08 42%, var(--bg) 100%);}
+.bg-photo{position:absolute;inset:0;
+  background-image:url("assets/hero.jpg");
+  background-size:cover;background-position:center 30%;
+  opacity:.34;filter:blur(2.5px) saturate(.72) contrast(1.06);
+  transform:scale(1.06);}
+.bg-photo::after{content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(90% 70% at 50% 18%, rgba(231,198,94,.16), transparent 60%),
+    linear-gradient(180deg, rgba(11,9,6,.72) 0%, rgba(11,9,6,.86) 55%, var(--bg) 100%);}
+.bg-orn{position:absolute;inset:0;opacity:.5;
+  background:
+    repeating-linear-gradient(115deg, rgba(231,198,94,.05) 0 1px, transparent 1px 78px),
+    repeating-linear-gradient(-65deg, rgba(231,198,94,.04) 0 1px, transparent 1px 120px);}
+.bg-glow{position:absolute;inset-inline:-20%;top:-30%;height:70vh;filter:blur(70px);
+  background:radial-gradient(50% 50% at 50% 50%, rgba(231,198,94,.30), transparent 70%);
+  animation:drift 16s var(--ease) infinite alternate;}
+.bg-vignette{position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(120% 100% at 50% 40%, transparent 40%, rgba(0,0,0,.72) 100%);}
+@keyframes drift{from{transform:translate3d(-3%,0,0) scale(1)}to{transform:translate3d(3%,4%,0) scale(1.12)}}
+
+/* ============ الهيكل ============ */
+.shell{width:100%;max-width:520px;margin-inline:auto;padding:22px 16px calc(104px + env(safe-area-inset-bottom));
+  position:relative}
+@media (min-width:900px){
+  .shell::before{content:"";position:absolute;inset:-40px -60px;z-index:-1;border-radius:40px;
+    background:radial-gradient(60% 50% at 50% 40%, rgba(231,198,94,.16), transparent 70%);
+    filter:blur(20px);pointer-events:none}
+}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+/* ============ بطاقة الهيرو ============ */
+.frame{position:relative;border:1px solid var(--line);border-radius:var(--radius);
+  background:linear-gradient(160deg, rgba(28,22,13,.82), rgba(12,9,6,.9));
+  box-shadow:var(--shadow), inset 0 1px 0 rgba(251,238,184,.10);
+  padding:24px 20px 22px;backdrop-filter:blur(6px);overflow:hidden;}
+.frame::before{content:"";position:absolute;inset:8px;border:1px solid rgba(231,198,94,.16);
+  border-radius:14px;pointer-events:none}
+.corners i{position:absolute;width:26px;height:26px;border:2px solid var(--gold-2);opacity:.9;
+  filter:drop-shadow(0 0 6px rgba(231,198,94,.45))}
+.corners i:nth-child(1){top:-1px;inset-inline-start:-1px;border-inline-end:0;border-bottom:0;border-start-start-radius:20px}
+.corners i:nth-child(2){top:-1px;inset-inline-end:-1px;border-inline-start:0;border-bottom:0;border-start-end-radius:20px}
+.corners i:nth-child(3){bottom:-1px;inset-inline-start:-1px;border-inline-end:0;border-top:0;border-end-start-radius:20px}
+.corners i:nth-child(4){bottom:-1px;inset-inline-end:-1px;border-inline-start:0;border-top:0;border-end-end-radius:20px}
+
+/* ============ الشعار ============ */
+.brand{display:flex;flex-direction:column;align-items:center;text-align:center;gap:0}
+.mono{position:relative;width:114px;height:114px;margin-bottom:10px;filter:drop-shadow(0 10px 26px rgba(0,0,0,.6))}
+.mono .ring{transform-origin:50% 50%;animation:spin 26s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.mono svg{width:100%;height:100%;display:block}
+.brand-name{
+  font-family:"Cairo","Tajawal",sans-serif;font-weight:800;
+  font-size:clamp(2.5rem,11.5vw,3.25rem);line-height:1.3;margin:0;
+  background:linear-gradient(115deg,#fbeeb8 0%,#e7c65e 38%,#a87d1f 62%,#f4e2a6 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  letter-spacing:.01em;filter:drop-shadow(0 6px 18px rgba(231,198,94,.22));}
+.brand-latin{font-family:"DM Serif Display",serif;margin:.25rem 0 0;
+  font-size:.96rem;letter-spacing:.52em;text-indent:.52em;color:var(--gold-2);opacity:.95}
+.ornament{display:flex;align-items:center;gap:12px;width:min(270px,80%);margin:13px auto 11px}
+.ornament span{flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--line-strong),transparent)}
+.ornament svg{width:11px;height:11px;color:var(--gold-2);flex:none}
+.tagline{font-family:"Tajawal",sans-serif;font-weight:900;font-size:clamp(1.45rem,7vw,1.9rem);
+  margin:0;color:#fff;letter-spacing:.01em;text-shadow:0 4px 18px rgba(0,0,0,.6)}
+.sub{font-weight:500;color:var(--gold-2);font-size:1.05rem;margin:.35rem 0 0;letter-spacing:.02em}
+
+/* ============ الأزرار ============ */
+.cta{margin-top:16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
+  font-weight:800;font-size:1.06rem;border-radius:16px;cursor:pointer;border:1px solid transparent;
+  transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .25s var(--ease),border-color .25s var(--ease);
+  -webkit-tap-highlight-color:transparent}
+.btn svg{width:22px;height:22px;flex:none}
+.btn-gold{width:100%;padding:14px 22px;color:#2a1e06;
+  background:linear-gradient(135deg,#fbeeb8 0%,#e7c65e 42%,#d3a63f 70%,#f3dc9a 100%);
+  box-shadow:0 14px 34px -14px rgba(231,198,94,.65), inset 0 1px 0 rgba(255,255,255,.45);
+  position:relative;overflow:hidden}
+.btn-gold::after{content:"";position:absolute;top:0;inset-inline-start:-60%;width:45%;height:100%;
+  transform:skewX(-18deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);
+  animation:sheen 4.5s var(--ease) infinite}
+@keyframes sheen{0%,65%{inset-inline-start:-60%}100%{inset-inline-start:130%}}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 20px 44px -14px rgba(231,198,94,.8), inset 0 1px 0 rgba(255,255,255,.5)}
+.btn-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.btn-ghost{padding:14px 10px;color:var(--ink);background:rgba(255,255,255,.03);
+  border-color:var(--line-strong);font-size:1rem}
+.btn-ghost:hover{background:rgba(231,198,94,.1);border-color:var(--gold-2);transform:translateY(-2px)}
+.btn-ghost svg{width:20px;height:20px}
+
+/* رقم المتجر */
+.number{display:flex;flex-direction:column;align-items:center;gap:7px;margin-top:13px}
+.number .num-label{color:var(--muted);font-size:.86rem;font-weight:500}
+.num-row{display:flex;align-items:center;gap:10px}
+.number b{font-weight:800;color:var(--ink);font-size:1.08rem;letter-spacing:.1em;
+  direction:ltr;unicode-bidi:isolate}
+.copy-btn{display:inline-flex;align-items:center;gap:6px;border:1px dashed var(--line-strong);
+  background:transparent;color:var(--gold-2);font-size:.78rem;font-weight:700;
+  padding:4px 10px;border-radius:999px;cursor:pointer;transition:.2s var(--ease)}
+.copy-btn:hover{background:rgba(231,198,94,.12);color:var(--gold-1)}
+.copy-btn svg{width:14px;height:14px}
+
+/* ============ السوشيال ميديا ============ */
+.socials{margin-top:20px;padding-top:18px;border-top:1px solid var(--line)}
+.socials-title{font-weight:700;color:var(--muted);font-size:1rem;margin:0 0 16px}
+.social-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.social{display:flex;flex-direction:column;align-items:center;gap:9px;padding:16px 6px 13px;
+  border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.025);
+  transition:transform .25s var(--ease),border-color .25s var(--ease),background .25s var(--ease)}
+.social:hover{transform:translateY(-4px);border-color:var(--gold-2);background:rgba(231,198,94,.09)}
+.social .ico{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;
+  border:1px solid var(--line-strong);color:var(--gold-2);
+  background:radial-gradient(circle at 50% 20%, rgba(231,198,94,.18), transparent 70%);}
+.social .ico svg{width:24px;height:24px}
+.social span{font-weight:700;font-size:.92rem}
+
+/* ============ الأقسام ============ */
+.section{margin-top:34px}
+.section-head{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.section-head h2{font-family:"Reem Kufi",sans-serif;font-size:1.28rem;margin:0;font-weight:700;color:var(--ink)}
+.section-head .line{flex:1;height:1px;background:linear-gradient(90deg,var(--line-strong),transparent)}
+.section-head svg{width:20px;height:20px;color:var(--gold-2);flex:none}
+
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tile{display:flex;align-items:center;gap:12px;padding:15px 14px;border-radius:16px;
+  border:1px solid var(--line);background:linear-gradient(150deg,rgba(30,24,14,.7),rgba(13,10,6,.75));
+  transition:transform .25s var(--ease),border-color .25s var(--ease),box-shadow .25s var(--ease)}
+.tile:hover{transform:translateY(-3px);border-color:var(--line-strong);box-shadow:0 14px 30px -18px rgba(0,0,0,.9)}
+.tile .ico{width:42px;height:42px;flex:none;border-radius:12px;display:grid;place-items:center;
+  background:rgba(231,198,94,.1);border:1px solid var(--line);color:var(--gold-2)}
+.tile .ico svg{width:20px;height:20px}
+.tile b{display:block;font-weight:800;font-size:.98rem;line-height:1.4}
+.tile small{display:block;color:var(--muted-2);font-size:.78rem;font-weight:500}
+
+/* الدفع */
+.pay{display:flex;flex-direction:column;gap:10px}
+.pay-row{display:flex;align-items:center;gap:12px;padding:13px 14px;border-radius:14px;
+  border:1px solid var(--line);background:rgba(255,255,255,.025)}
+.pay-row .ico{width:40px;height:40px;flex:none;border-radius:11px;display:grid;place-items:center;
+  background:rgba(231,198,94,.1);border:1px solid var(--line);color:var(--gold-2)}
+.pay-row .ico svg{width:20px;height:20px}
+.pay-row .txt{flex:1;min-width:0}
+.pay-row .txt b{display:block;font-weight:700;font-size:.95rem;line-height:1.4}
+.pay-row .txt small{display:block;color:var(--muted-2);font-size:.78rem}
+.pay-row .val{font-weight:700;font-size:.88rem;color:var(--gold-2);letter-spacing:.06em;
+  white-space:nowrap;direction:ltr;unicode-bidi:isolate}
+
+.info{display:grid;gap:10px}
+.info-row{display:flex;align-items:flex-start;gap:12px;padding:14px;border-radius:14px;
+  border:1px solid var(--line);background:rgba(255,255,255,.025)}
+.info-row svg{width:20px;height:20px;color:var(--gold-2);flex:none;margin-top:3px}
+.info-row b{display:block;font-weight:700;font-size:.95rem}
+.info-row small{color:var(--muted-2);font-size:.82rem;font-weight:500}
+
+/* ============ الفوتر ============ */
+.footer{margin-top:34px;text-align:center;color:var(--muted-2);font-size:.8rem;line-height:2}
+.footer .mark{font-family:"DM Serif Display",serif;letter-spacing:.42em;text-indent:.42em;
+  color:var(--gold-3);display:block;margin-bottom:4px}
+
+/* ============ شريط سفلي ثابت ============ */
+.actionbar{position:fixed;inset-inline:0;bottom:0;z-index:30;display:flex;gap:10px;
+  padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+  background:linear-gradient(180deg, rgba(11,9,6,.2), rgba(11,9,6,.92) 40%);
+  backdrop-filter:blur(14px);border-top:1px solid var(--line);
+  transform:translateY(110%);transition:transform .45s var(--ease)}
+.actionbar.show{transform:none}
+.actionbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;
+  padding:13px 8px;border-radius:14px;font-weight:800;font-size:.98rem}
+.actionbar svg{width:19px;height:19px}
+.ab-wa{background:linear-gradient(135deg,#fbeeb8,#e7c65e 45%,#c29a35);color:#2a1e06}
+.ab-call,.ab-ig{background:rgba(255,255,255,.04);border:1px solid var(--line-strong);color:var(--ink)}
+.actionbar a:active{transform:scale(.98)}
+
+/* ============ التنبيه ============ */
+.toast{position:fixed;inset-inline:0;bottom:92px;margin-inline:auto;width:max-content;max-width:88%;
+  background:rgba(20,15,8,.96);border:1px solid var(--line-strong);color:var(--gold-1);
+  padding:11px 18px;border-radius:999px;font-size:.9rem;font-weight:700;z-index:60;
+  opacity:0;transform:translateY(12px);transition:.35s var(--ease);pointer-events:none}
+.toast.show{opacity:1;transform:none}
+
+:focus-visible{outline:2px solid var(--gold-2);outline-offset:3px;border-radius:8px}
+
+@media (max-width:380px){
+  .shell{padding-inline:12px}
+  .frame{padding:24px 14px 22px}
+  .social span{font-size:.84rem}
+  .btn-row{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="bg" aria-hidden="true">
+  <div class="bg-photo"></div>
+  <div class="bg-orn"></div>
+  <div class="bg-glow"></div>
+</div>
+<div class="bg-vignette" aria-hidden="true"></div>
+
+<main class="shell">
+
+  <!-- ============ الهيرو ============ -->
+  <section class="frame reveal" id="hero">
+    <div class="corners" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+    <div class="brand">
+      <div class="mono" aria-hidden="true">
+        <svg viewBox="0 0 120 120">
+          <defs>
+            <linearGradient id="goldFill" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#fbeeb8"/><stop offset=".45" stop-color="#e7c65e"/>
+              <stop offset=".8" stop-color="#a87d1f"/><stop offset="1" stop-color="#f3dc9a"/>
+            </linearGradient>
+            <radialGradient id="disc" cx="50%" cy="35%" r="70%">
+              <stop offset="0" stop-color="#2a2114"/><stop offset="1" stop-color="#0c0906"/>
+            </radialGradient>
+          </defs>
+          <circle cx="60" cy="60" r="57" fill="url(#disc)"/>
+          <circle cx="60" cy="60" r="56" fill="none" stroke="url(#goldFill)" stroke-width="1.6"/>
+          <g class="ring">
+            <circle cx="60" cy="60" r="47" fill="none" stroke="rgba(231,198,94,.45)" stroke-width="1"
+                    stroke-dasharray="1.5 7" stroke-linecap="round"/>
+          </g>
+          <text x="60" y="61" text-anchor="middle" dominant-baseline="central"
+                font-family="'DM Serif Display', Georgia, serif" font-size="52" fill="url(#goldFill)">G</text>
+        </svg>
+      </div>
+
+      <h1 class="brand-name" data-config="name">جليتش</h1>
+      <p class="brand-latin" data-config="latin">GULISH</p>
+
+      <div class="ornament" aria-hidden="true">
+        <span></span>
+        <svg viewBox="0 0 12 12" fill="currentColor"><path d="M6 0 9 6 6 12 3 6Z"/></svg>
+        <span></span>
+      </div>
+
+      <p class="tagline">ستايلك كله هنا</p>
+      <p class="sub" data-config="tagline">ملابس رجالي وكوتشيهات</p>
+    </div>
+
+    <div class="cta">
+      <a class="btn btn-gold" id="waTop" href="https://wa.me/201117549514?text=%D8%A3%D8%B1%D9%8A%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%AC%D9%84%D9%8A%D8%B4%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.17-1.14l-.3-.18-3.1.81.83-3.02-.2-.31a8.16 8.16 0 0 1-1.25-4.37c0-4.52 3.68-8.2 8.21-8.2 2.19 0 4.25.86 5.8 2.41a8.16 8.16 0 0 1 2.4 5.8c0 4.53-3.68 8.2-8.21 8.2Zm4.5-6.13c-.25-.13-1.46-.72-1.68-.8-.23-.08-.39-.12-.55.12-.17.25-.64.8-.78.97-.15.16-.29.18-.53.06-.25-.13-1.03-.38-1.96-1.21-.72-.65-1.21-1.44-1.35-1.69-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.09-.16.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.83-.2-.48-.4-.42-.55-.43h-.47c-.16 0-.42.06-.64.31-.22.25-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.02.4 1.37.51.58.18 1.1.16 1.52.1.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.47-.29Z"/></svg>
+        واتساب
+      </a>
+
+      <div class="btn-row">
+        <a class="btn btn-ghost" id="callTop" href="tel:+201117549514">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          اتصال
+        </a>
+        <button class="btn btn-ghost" id="saveVcard" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>
+          حفظ الرقم
+        </button>
+      </div>
+
+      <div class="number">
+        <span class="num-label">للطلب والاستفسار</span>
+        <span class="num-row">
+          <b id="phoneText">0111 754 9514</b>
+          <button class="copy-btn" id="copyPhone" type="button" aria-label="نسخ رقم الهاتف">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            نسخ
+          </button>
+        </span>
+      </div>
+    </div>
+
+    <div class="socials">
+      <p class="socials-title">تابعنا على السوشيال ميديا</p>
+      <div class="social-grid">
+        <a class="social" id="igLink" href="https://www.instagram.com/abdo.dy85" target="_blank" rel="noopener">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg></span>
+          <span>انستجرام</span>
+        </a>
+        <a class="social" id="fbLink" href="https://www.facebook.com/share/1FHY5zyeqd/" target="_blank" rel="noopener">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.5-3.91 3.77-3.91 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.89h2.78l-.45 2.91h-2.33V22c4.78-.76 8.44-4.92 8.44-9.94Z"/></svg></span>
+          <span>فيسبوك</span>
+        </a>
+        <a class="social" id="waLink" href="https://wa.me/201117549514" target="_blank" rel="noopener">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.17-1.14l-.3-.18-3.1.81.83-3.02-.2-.31a8.16 8.16 0 0 1-1.25-4.37c0-4.52 3.68-8.2 8.21-8.2 2.19 0 4.25.86 5.8 2.41a8.16 8.16 0 0 1 2.4 5.8c0 4.53-3.68 8.2-8.21 8.2Zm4.5-6.13c-.25-.13-1.46-.72-1.68-.8-.23-.08-.39-.12-.55.12-.17.25-.64.8-.78.97-.15.16-.29.18-.53.06-.25-.13-1.03-.38-1.96-1.21-.72-.65-1.21-1.44-1.35-1.69-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.09-.16.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.83-.2-.48-.4-.42-.55-.43h-.47c-.16 0-.42.06-.64.31-.22.25-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.02.4 1.37.51.58.18 1.1.16 1.52.1.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.47-.29Z""/></svg></span>
+          <span>واتساب</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ تصفح حسب الفئة ============ -->
+  <section class="section reveal">
+    <div class="section-head">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3h7l2 3h9v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3Z"/></svg>
+      <h2>تصفّح حسب الفئة</h2>
+      <span class="line"></span>
+    </div>
+    <div class="tiles">
+      <a class="tile" href="https://ig.me/m/abdo.dy85" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2Z"/></svg></span>
+        <span><b>وصل حديثاً</b><small>أحدث القطع على المتجر</small></span>
+      </a>
+      <a class="tile" href="https://ig.me/m/abdo.dy85" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 11 3 3 7-7"/><path d="M3 6h2M3 12h2M3 18h2M19 6h2M19 18h2M12 3v2M12 19v2"/></svg></span>
+        <span><b>الأكثر مبيعاً</b><small>اختيارات عملائنا</small></span>
+      </a>
+      <a class="tile" href="https://ig.me/m/abdo.dy85" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8Z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg></span>
+        <span><b>عروض الموسم</b><small>خصومات محدودة</small></span>
+      </a>
+      <a class="tile" href="https://ig.me/m/abdo.dy85" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span>
+        <span><b>كل الأقسام</b><small>تصفّح كامل التشكيلة</small></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ الدفع والتحويل ============ -->
+  <section class="section reveal">
+    <div class="section-head">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M2 10h20"/></svg>
+      <h2>الدفع والتحويل</h2>
+      <span class="line"></span>
+    </div>
+    <div class="pay">
+      <div class="pay-row">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4.5 13.5H11l-1 8.5 8.5-11.5H12l1-8.5Z"/></svg></span>
+        <span class="txt"><b>فودافون كاش</b><small>تحويل فوري من شبكتك</small></span>
+        <span class="val">0111 754 9514</span>
+      </div>
+      <div class="pay-row">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+        <span class="txt"><b>اتصالات كاش</b><small>تحويل فوري من شبكتك</small></span>
+        <span class="val">0111 754 9514</span>
+      </div>
+      <div class="pay-row">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/><path d="M18 15v6M15 18h6"/></svg></span>
+        <span class="txt"><b>إنستاباي / تحويل بنكي</b><small>التفاصيل تُرسل عند الطلب</small></span>
+        <span class="val">عبر واتساب</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ معلومات ============ -->
+  <section class="section reveal">
+    <div class="section-head">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+      <h2>الخدمة والتوصيل</h2>
+      <span class="line"></span>
+    </div>
+    <div class="info">
+      <div class="info-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+        <div><b>مواعيد العمل</b><small id="hoursText">السبت – الخميس، من ١٢ ظهراً حتى ١٢ ليلاً</small></div>
+      </div>
+      <div class="info-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v9H3z"/><path d="M14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17.5" cy="18" r="2"/></svg>
+        <div><b>الشحن والتوصيل</b><small id="shipText">شحن لكل محافظات مصر — والدفع عند الاستلام متاح</small></div>
+      </div>
+      <div class="info-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg>
+        <div><b>الاستفسار والمقاسات</b><small>راسلنا على واتساب لطلب المقاس أو أي استفسار قبل الطلب</small></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer reveal">
+    <span class="mark">GULISH</span>
+    <p>© <span id="year"></span> جليتش — جميع الحقوق محفوظة</p>
+    <p id="credit">الصورة الخلفية: rawpixel &mdash; رخصة CC0</p>
+  </footer>
+</main>
+
+<!-- ============ شريط إجراءات ثابت ============ -->
+<nav class="actionbar" id="actionbar" aria-label="إجراءات سريعة">
+  <a class="ab-wa" href="https://wa.me/201117549514?text=%D8%A3%D8%B1%D9%8A%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%AC%D9%84%D9%8A%D8%B4%20%D8%B9%D8%A8%D8%AF%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.17-1.14l-.3-.18-3.1.81.83-3.02-.2-.31a8.16 8.16 0 0 1-1.25-4.37c0-4.52 3.68-8.2 8.21-8.2 2.19 0 4.25.86 5.8 2.41a8.16 8.16 0 0 1 2.4 5.8c0 4.53-3.68 8.2-8.21 8.2Zm4.5-6.13c-.25-.13-1.46-.72-1.68-.8-.23-.08-.39-.12-.55.12-.17.25-.64.8-.78.97-.15.16-.29.18-.53.06-.25-.13-1.03-.38-1.96-1.21-.72-.65-1.21-1.44-1.35-1.69-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.09-.16.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.83-.2-.48-.4-.42-.55-.43h-.47c-.16 0-.42.06-.64.31-.22.25-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.02.4 1.37.51.58.18 1.1.16 1.52.1.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.47-.29Z"/></svg>
+    واتساب
+  </a>
+  <a class="ab-call" href="tel:+201117549514">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+    اتصال
+  </a>
+  <a class="ab-ig" href="https://www.instagram.com/abdo.dy85" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
+    انستجرام
+  </a>
+</nav>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* ============================================================
+   ⚙️  إعدادات المتجر — عدّل البيانات هنا فقط
+   ============================================================ */
+const STORE = {
+  name:        "جليتش",                       // اسم البراند
+  latin:       "GULISH",                       // الاسم اللاتيني
+  tagline:     "ملابس رجالي وكوتشيهات",        // السطر الفرعي
+  phone:       "01117549514",                  // رقم الهاتف (محلي)
+  phoneIntl:   "+201117549514",               // نفس الرقم بصيغة دولية
+  wa:          "201117549514",                // رقم واتساب (بدون +)
+  waText:      "أرحبا، جليتش عايز أستفسار عن الطلب",
+  instagram:   "https://www.instagram.com/abdo.dy85",
+  facebook:    "https://www.facebook.com/share/1FHY5zyeqd/",
+  hours:       "السبت – الخميس، من ١٢ ظهراً حتى ١٢ ليلاً",
+  shipping:    "شحن لكل محافظات مصر — والدفع عند الاستلام متاح"
+};
+/* ============================================================ */
+
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+
+/* تطبيق الإعدادات على الصفحة */
+(function applyStore(){
+  const waLink = `https://wa.me/${STORE.wa}?text=${encodeURIComponent(STORE.waText)}`;
+  const set = (sel, attr, val) => { const el = $(sel); if (el && val !== undefined) el.setAttribute(attr, val); };
+
+  set('[data-config="name"]', 'textContent', STORE.name);
+  set('[data-config="latin"]', 'textContent', STORE.latin);
+  set('[data-config="tagline"]', 'textContent', STORE.tagline);
+
+  set('#waTop', 'href', waLink);
+  set('#waLink', 'href', `https://wa.me/${STORE.wa}`);
+  set('#callTop', 'href', `tel:${STORE.phoneIntl}`);
+  set('#igLink', 'href', STORE.instagram);
+  set('#fbLink', 'href', STORE.facebook);
+  set('#phoneText', 'textContent', STORE.phone.replace(/^(\d{3})(\d{4})(\d{4})$/, '$1 $2 $3'));
+  set('#hoursText', 'textContent', STORE.hours);
+  set('#shipText', 'textContent', STORE.shipping);
+
+  $$('.ab-wa').forEach(a => a.setAttribute('href', waLink));
+  $('.ab-call').setAttribute('href', `tel:${STORE.phoneIntl}`);
+  $('.ab-ig').setAttribute('href', STORE.instagram);
+  $$('.tile').forEach(t => t.setAttribute('href', `https://ig.me/m/${STORE.instagram.split('/').pop()}`));
+})();
+
+/* تاريخ الفوتر */
+$('#year').textContent = new Date().getFullYear();
+
+/* ظهور تدريجي عند التمرير */
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+}, { threshold: .12, rootMargin: '0px 0px -40px' });
+$$('.reveal').forEach(el => io.observe(el));
+
+/* إظهار شريط الإجراءات بعد تجاوز الهيرو */
+const bar = $('#actionbar'), hero = $('#hero');
+new IntersectionObserver(([e]) => {
+  bar.classList.toggle('show', !e.isIntersecting && e.boundingClientRect.top < 0);
+}, { threshold: .12 }).observe(hero);
+
+/* تنبيه صغير */
+let toastTimer;
+function toast(msg){
+  const t = $('#toast');
+  t.textContent = msg; t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 2200);
+}
+
+/* نسخ رقم الهاتف */
+$('#copyPhone').addEventListener('click', async () => {
+  try {
+    await navigator.clipboard.writeText(STORE.phone);
+    toast('تم نسخ رقم المتجر');
+  } catch (e) {
+    const ta = document.createElement('textarea');
+    ta.value = STORE.phone; document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); toast('تم نسخ رقم المتجر'); }
+    catch (err) { toast(STORE.phone); }
+    ta.remove();
+  }
+});
+
+/* حفظ الرقم في جهات الاتصال (vCard) */
+$('#saveVcard').addEventListener('click', () => {
+  const vcard = [
+    'BEGIN:VCARD','VERSION:3.0',
+    `N:${STORE.name};;;`,
+    `FN:${STORE.name}`,
+    `ORG:${STORE.name}`,
+    `TEL;TYPE=CELL:${STORE.phoneIntl}`,
+    'END:VCARD'
+  ].join('\n');
+  const blob = new Blob([vcard], { type: 'text/vcard;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'glish.vcf';
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1500);
+  toast('تم حفظ الرقم في جهات الاتصال');
+});
+</script>
+</body>
+</html>
